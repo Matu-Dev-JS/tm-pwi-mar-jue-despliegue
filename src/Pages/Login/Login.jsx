@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { users } from '../../data/usersData'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
 
@@ -120,6 +120,7 @@ const Login = () => {
                 errors.global.map((error) => (<span key={error.id}>{error.text}</span>) )
             }
             <button type='submit'>Enviar</button>
+            <span>Aun no tienes una cuenta? <Link to={'/registro'}>Registrate</Link></span>
         </form>
     </main>
   )

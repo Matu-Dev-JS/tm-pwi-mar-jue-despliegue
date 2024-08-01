@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import { Detail, Home, Cart, Login, NewProduct, NotFound, Review } from './Pages'
+import './global.css'
 function App() {
 
 

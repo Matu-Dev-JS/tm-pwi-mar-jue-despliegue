@@ -1,3 +1,3 @@
 import ProductList from "./ProductList/ProductList";
-
-export {ProductList}
+import Navbar from "./Navbar/Navbar";
+export {ProductList, Navbar}

@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: blanchedalmond;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-mobible-menu {
+    display: none;
+}
+
+.nav-mobible {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .btn-mobible-menu {
+        display: flex;
+    }
+    header nav{
+        display: none;
+    }
+
+    .nav-mobible {
+        display: flex;
+    }
+}

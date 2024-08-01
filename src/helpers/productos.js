@@ -137,3 +137,48 @@ mook = [
     }
 ]
 */
+
+
+
+
+const usuarios = [
+    {
+        id: 1,
+        username: 'pepe'
+    }
+]
+
+const workspaces = [
+    {
+        id: 1,
+        user_id: 1,
+        name: 'proyectos'
+    },
+    {
+        id: 2,
+        user_id: 1,
+        name: 'clases con pepe'
+
+    }
+]
+const canales = [
+    {
+        id_workspace: 1,
+        id: 1,
+        name: 'general',
+        messages: [
+            {
+                text: 'hola',
+                time: 'hoy',
+                author: 'pepe',
+                id:1
+            }
+        ]
+    }
+]
+
+const obtenerWorkspacePorIdUsuario = (id_user) => {
+    workspaces.filter(workspace => workspace.user_id === id_user)
+}
+
+const workspacesDePepe = obtenerWorkspacePorIdUsuario(1)
